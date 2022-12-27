@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_primary"
+    app:startDestination="@id/fragment_login">
+
+    <dialog
+        android:id="@+id/dialog_fragment_loading"
+        android:name="com.wayne.taipeiparking.fragment.LoadingDialogFragment"
+        android:label="LoadingDialogFragment"
+        tools:layout="@layout/dialog_fragment_loading" />
+
+    <action
+        android:id="@+id/action_to_loading"
+        app:destination="@id/dialog_fragment_loading" />
+
+    <dialog
+        android:id="@+id/dialog_fragment_alert"
+        android:name="com.wayne.taipeiparking.fragment.AlertDialogFragment"
+        android:label="AlertDialogFragment" />
+
+    <action
+        android:id="@+id/action_to_alert"
+        app:destination="@id/dialog_fragment_alert"
+        app:popUpTo="@id/dialog_fragment_alert"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.wayne.taipeiparking.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_to_parking"
+            app:destination="@id/fragment_parking"
+            app:popUpTo="@id/fragment_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_parking"
+        android:name="com.wayne.taipeiparking.fragment.ParkingFragment"
+        android:label="ParkingFragment"
+        tools:layout="@layout/fragment_parking">
+
+        <action
+            android:id="@+id/action_to_profile"
+            app:destination="@id/fragment_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.wayne.taipeiparking.fragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_to_login"
+            app:destination="@id/fragment_login"
+            app:popUpTo="@id/fragment_parking"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

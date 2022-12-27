@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaipeiParking</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email_format_invalid">Email format is invalid</string>
+    <string name="error">Error</string>
+    <string name="parking_info">Parking Info.</string>
+    <string name="parking_id">ID : %s</string>
+    <string name="parking_name">Name : %s</string>
+    <string name="parking_address">Address : %s</string>
+    <string name="parking_total">Total : %d</string>
+    <string name="parking_available">Available : %d</string>
+    <string name="parking_standby">[Charging Station] StandBy : %d</string>
+    <string name="parking_charging">[Charging Station] Charging : %d</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="timezone">Timezone</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="key_name"
+        android:persistent="false"
+        android:title="@string/name" />
+
+    <Preference
+        android:key="key_phone"
+        android:persistent="false"
+        android:title="@string/phone" />
+
+    <Preference
+        android:key="key_email"
+        android:persistent="false"
+        android:title="@string/email" />
+
+    <ListPreference
+        android:key="key_timezone"
+        android:persistent="false"
+        android:title="@string/timezone" />
+</PreferenceScreen>
